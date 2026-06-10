@@ -1,0 +1,36 @@
+
+> video-streaming@1.0.0 build
+> tsc
+
+src/auth/auth.controller.ts(25,23): error TS2769: No overload matches this call.
+  Overload 1 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: null, options?: SignOptions & { algorithm: "none"; }): string', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'null'.
+  Overload 2 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | PrivateKeyInput | JsonWebKeyInput | Secret, options?: SignOptions): string', gave the following error.
+    Type 'string' is not assignable to type 'number | StringValue'.
+  Overload 3 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | PrivateKeyInput | JsonWebKeyInput | Secret, callback: SignCallback): void', gave the following error.
+    Object literal may only specify known properties, and 'expiresIn' does not exist in type 'SignCallback'.
+src/auth/auth.controller.ts(28,30): error TS2769: No overload matches this call.
+  Overload 1 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: null, options?: SignOptions & { algorithm: "none"; }): string', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'null'.
+  Overload 2 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | PrivateKeyInput | JsonWebKeyInput | Secret, options?: SignOptions): string', gave the following error.
+    Type 'string' is not assignable to type 'number | StringValue'.
+  Overload 3 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | PrivateKeyInput | JsonWebKeyInput | Secret, callback: SignCallback): void', gave the following error.
+    Object literal may only specify known properties, and 'expiresIn' does not exist in type 'SignCallback'.
+src/auth/auth.service.ts(174,34): error TS2769: No overload matches this call.
+  Overload 1 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: null, options?: SignOptions & { algorithm: "none"; }): string', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type 'null'.
+  Overload 2 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | PrivateKeyInput | JsonWebKeyInput | Secret, options?: SignOptions): string', gave the following error.
+    Type 'string' is not assignable to type 'number | StringValue'.
+  Overload 3 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | PrivateKeyInput | JsonWebKeyInput | Secret, callback: SignCallback): void', gave the following error.
+    Object literal may only specify known properties, and 'expiresIn' does not exist in type 'SignCallback'.
+src/interfaces/user.interface.ts(10,11): error TS2430: Interface 'IUser' incorrectly extends interface 'Document<ObjectId, any, any, Record<string, any>, {}>'.
+  Types of property '_id' are incompatible.
+    Type 'string' is not assignable to type 'ObjectId'.
+src/routes/user.route.ts(11,35): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+      Type 'import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-session/node_modules/@types/express/index").RequestHandler<import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-session/node_modules/@types/express-serve-static-core/index")....' is not assignable to type 'import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-serve-static-core/index").RequestHandler<import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-session/node_modules/@types/express-serve-static-core/index").ParamsDictionary, ...'.
+        Types of parameters 'req' and 'req' are incompatible.
+          Type 'import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-serve-static-core/index").Request<import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-session/node_modules/@types/express-serve-static-core/index").ParamsDictionary, any, an...' is not assignable to type 'import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-session/node_modules/@types/express-serve-static-core/index").Request<import("/Users/daniel/Documents/VideoStreaming/video-streaming/server/node_modules/@types/express-session/node_modules/@types/express-serve-static-co...'.
+            The types of 'app.router' are incompatible between these types.
+              Type 'string' is not assignable to type 'Router'.

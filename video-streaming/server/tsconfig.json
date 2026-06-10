@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "target": "es6",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+  },
+  "include": ["src/**/*.ts","src/tests/**/*.ts","../client/src/interfaces/stream.interface.ts"],
+  "exclude": ["node_modules"]
+}
+
